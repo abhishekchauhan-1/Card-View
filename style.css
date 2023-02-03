@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container-div{
+    width: 100%;
+    margin: 0;
+    padding-bottom: 50px;
+}
+.container-div h1{
+    text-align: center;
+    padding: 25px 0;
+    margin: 0;
+    font-family: 'Poppins';
+}
+.container{
+    width: 1170px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container img{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    box-shadow: 0 0 10px 3px lightgray;
+    padding: 5px;
+    background-size: cover;
+}
+.training-items{
+    flex-basis: 23%;
+    margin: 10px 0;
+    box-shadow: 0 0 10px 3px lightgray;
+    border-radius: 2%;
+    text-align: center;
+    background: white;
+    padding: 15px 0;
+}
+.training-items h3{
+    padding: 10px 0;
+    font-family: 'Poppins';
+}
+.training-items p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    padding: 10px;
+}
+.training-items button{
+    background: green;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-family: 'Poppins';
+    margin: 10px 0;
+}
+.training-items:hover button{
+    color: black;
+    background: grey;
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    .container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .training-items{
+        margin: 10px;
+    }
+}
